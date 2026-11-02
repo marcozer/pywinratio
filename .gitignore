@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+site/
+.venv/
+venv/
+*.egg-info/
+~$*.docx
+
+# documentation build products
+docs/_build/
+docs/api/generated/
+docs/jupyter_execute/
+.jupyter_cache/
+
+# never commit real patient data
+data/protected/
+*.protected.csv

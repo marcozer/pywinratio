@@ -1,0 +1,25 @@
+{
+  "public_dataset": "data/public/distal_pancreatectomy_public.csv",
+  "config": "studies/distal_pancreatectomy/config/primary_analysis.yaml",
+  "analysis_version": "1.0",
+  "reproducible_with_public_data": [
+    "results/public/win_ratio_summary.json",
+    "results/public/component_outcomes.csv",
+    "results/public/matched_metrics.csv",
+    "results/public/matched_risk_differences.csv",
+    "results/public/matching_balance.csv",
+    "results/public/matching_support.csv",
+    "results/public/hierarchy_sensitivities.csv",
+    "results/public/tier_resolution.csv",
+    "results/public/binary_benchmarks.csv",
+    "results/public/overlap_weighting_balance.csv",
+    "results/public/overlap_weight_summary.csv",
+    "results/public/win_ratio_overview.png",
+    "results/public/win_ratio_overview.svg"
+  ],
+  "dataset_type": "synthetic",
+  "notes": [
+    "The committed data set is synthetic; its estimates illustrate the software only.",
+    "Increase --n-boot (e.g. 2000-5000) for publication-grade intervals."
+  ]
+}

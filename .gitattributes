@@ -1,0 +1,4 @@
+# keep repository-only material out of `git archive` source bundles
+.github/ export-ignore
+.gitattributes export-ignore
+.readthedocs.yaml export-ignore

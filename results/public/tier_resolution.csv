@@ -1,0 +1,35 @@
+analysis,priority,outcome,wins,losses,resolved,conditional_resolution,overall_resolution
+graded_los_margin_1d,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+graded_los_margin_1d,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+graded_los_margin_1d,3,"Pancreatic fistula severity (none, B, C)",28,27,55,0.275,0.2140077821011673
+graded_los_margin_1d,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+graded_los_margin_1d,5,Length of stay (differences of 0 or 1 day tie),78,26,104,0.8253968253968254,0.4046692607003891
+exact_day_los,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+exact_day_los,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+exact_day_los,3,"Pancreatic fistula severity (none, B, C)",28,27,55,0.275,0.2140077821011673
+exact_day_los,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+exact_day_los,5,Length of stay (exact completed days),84,34,118,0.9365079365079365,0.4591439688715953
+los_margin_2_days,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+los_margin_2_days,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+los_margin_2_days,3,"Pancreatic fistula severity (none, B, C)",28,27,55,0.275,0.2140077821011673
+los_margin_2_days,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+los_margin_2_days,5,"Length of stay (differences of 0, 1, or 2 days tie)",58,18,76,0.6031746031746031,0.29571984435797666
+categorical_los,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+categorical_los,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+categorical_los,3,"Pancreatic fistula severity (none, B, C)",28,27,55,0.275,0.2140077821011673
+categorical_los,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+categorical_los,5,"Length of stay category (<=7, 8-13, >13 days)",48,17,65,0.5158730158730159,0.2529182879377432
+no_los,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+no_los,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+no_los,3,"Pancreatic fistula severity (none, B, C)",28,27,55,0.275,0.2140077821011673
+no_los,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+popf_before_clavien,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+popf_before_clavien,2,"Pancreatic fistula severity (none, B, C)",36,36,72,0.2857142857142857,0.2801556420233463
+popf_before_clavien,3,"Clavien-Dindo severity (none, III, IV)",23,12,35,0.19444444444444445,0.13618677042801555
+popf_before_clavien,4,Readmission,13,6,19,0.1310344827586207,0.07392996108949416
+popf_before_clavien,5,Length of stay (differences of 0 or 1 day tie),78,26,104,0.8253968253968254,0.4046692607003891
+readmission_before_popf,1,Mortality within 90 days,3,2,5,0.019455252918287938,0.019455252918287938
+readmission_before_popf,2,"Clavien-Dindo severity (none, III, IV)",33,19,52,0.20634920634920634,0.20233463035019456
+readmission_before_popf,3,Readmission,26,12,38,0.19,0.14785992217898833
+readmission_before_popf,4,"Pancreatic fistula severity (none, B, C)",15,21,36,0.2222222222222222,0.14007782101167315
+readmission_before_popf,5,Length of stay (differences of 0 or 1 day tie),78,26,104,0.8253968253968254,0.4046692607003891

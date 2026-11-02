@@ -1,0 +1,3 @@
+/* pywinratio documentation tweaks */
+div.cell_output table.dataframe { font-size: 0.85rem; }
+div.cell_output pre { font-size: 0.85rem; }

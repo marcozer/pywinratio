@@ -1,0 +1,55 @@
+{
+  "generated": "2026-11-02",
+  "r_version": "R version 4.6.1 (2026-06-24)",
+  "results": [
+    {
+      "scenario": "S1_trial_gehan",
+      "package": "BuyseTest 3.3.9",
+      "net_benefit": 0.1089444444444,
+      "se_net_benefit": 0.04499808752223,
+      "wr": 1.262615170345,
+      "se_log_wr": 0.09709628110358,
+      "p_value_net_benefit": 0.01631071331751
+    },
+    {
+      "scenario": "S2_cohort_all_pairs",
+      "package": "BuyseTest 3.3.9",
+      "net_benefit": 0.1551513786437,
+      "se_net_benefit": 0.03901432305391,
+      "wr": 1.453270942624,
+      "se_log_wr": 0.09558552270606,
+      "p_value_net_benefit": 9.128869323716e-05
+    },
+    {
+      "scenario": "S3_cohort_stratified",
+      "package": "BuyseTest 3.3.9",
+      "net_benefit": 0.1588586348377,
+      "se_net_benefit": 0.03912504271601,
+      "wr": 1.466569289757,
+      "se_log_wr": 0.09599018244282,
+      "p_value_net_benefit": 6.562311518099e-05
+    },
+    {
+      "scenario": "S4_matched_pairs",
+      "package": "BuyseTest 3.3.9",
+      "net_benefit": 0.1831395348837,
+      "wr": 1.5625
+    },
+    {
+      "scenario": "S5_trial_wins",
+      "package": "WINS 1.5.1",
+      "wr": 1.246726153073,
+      "wr_ci": [1.039936915644, 1.49463498927],
+      "net_benefit": 0.1090666666667,
+      "net_benefit_ci": [0.01900481678211, 0.1991285165512],
+      "win_odds": 1.244836875187,
+      "win_odds_ci": [1.039646547918, 1.490524687385]
+    },
+    {
+      "scenario": "S6_event_censoring_ties",
+      "package": "BuyseTest 3.3.9",
+      "wins": 2,
+      "losses": 3
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+population,first_listed_group,first_listed_n,comparator_n,propensity_histogram_overlap,rows_dropped_for_missing_covariates,matched_pairs,first_listed_retention_pct,comparator_retention_pct
+eligible_common_support,HIGH_VOLUME,314,481,0.9139796337248568,0,257,,
+retained_matched,HIGH_VOLUME,257,257,0.9688715953307394,0,257,81.84713375796179,53.43035343035343

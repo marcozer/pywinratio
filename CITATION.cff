@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "pywinratio: win ratio, net benefit and win odds for hierarchical composite outcomes in Python"
+abstract: >-
+  pywinratio computes the win ratio, the net benefit and the win odds for
+  hierarchical composite outcomes. Patients are compared pair by pair on
+  outcomes ranked by importance, which can be binary, ordinal, continuous or
+  censored times to an event. The comparison can use every pair of patients,
+  pairs within strata, matched pairs or weighted pairs, and handles patients
+  clustered in hospitals. Confidence intervals come from U-statistic theory,
+  the bootstrap or permutation tests. The package also does propensity-score
+  matching and weighting, sensitivity analyses and sample-size calculations.
+  Its results agree with the R packages BuyseTest and WINS.
+authors:
+  - family-names: Chouillard
+    given-names: Marc-Anthony
+    affiliation: "Department of HPB Surgery and Liver Transplantation, Beaujon Hospital, AP-HP, Université Paris Cité, Clichy, France"
+  - family-names: Husson
+    given-names: Thomas
+    affiliation: "Department of HPB Surgery and Liver Transplantation, Beaujon Hospital, AP-HP, Université Paris Cité, Clichy, France"
+version: 0.3.0
+date-released: "2026-11-02"
+license: MIT
+repository-code: "https://github.com/marcozer/pywinratio"
+url: "https://pywinratio.readthedocs.io"
+keywords:
+  - win ratio
+  - win odds
+  - net benefit
+  - generalized pairwise comparisons
+  - hierarchical composite endpoint
+  - prioritized outcomes
+  - Finkelstein-Schoenfeld test
+  - clinical trials
+  - propensity score
+  - Python
+references:
+  - type: article
+    authors:
+      - family-names: Pocock
+        given-names: Stuart J.
+      - family-names: Ariti
+        given-names: Cono A.
+      - family-names: Collier
+        given-names: Timothy J.
+      - family-names: Wang
+        given-names: Duolao
+    title: "The win ratio: a new approach to the analysis of composite endpoints in clinical trials based on clinical priorities"
+    journal: European Heart Journal
+    year: 2012
+    volume: 33
+    start: 176
+    end: 182
+    doi: 10.1093/eurheartj/ehr352
+  - type: article
+    authors:
+      - family-names: Buyse
+        given-names: Marc
+    title: "Generalized pairwise comparisons of prioritized outcomes in the two-sample problem"
+    journal: Statistics in Medicine
+    year: 2010
+    volume: 29
+    start: 3245
+    end: 3257
+    doi: 10.1002/sim.3923

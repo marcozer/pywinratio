@@ -1,0 +1,3 @@
+outcome,column,A_arm_value,B_arm_value,n_pairs_eligible,n_pairs_complete,n_pairs_excluded_missing_or_invalid,A_events,B_events,A_risk,B_risk,risk_difference_A_minus_B,ci_lower,ci_upper,alpha,n_boot,seed,both_event,neither_event,A_event_B_no_event,A_no_event_B_event,discordant_pairs,information_rate
+Ideal outcome,ideal_outcome,HIGH_VOLUME,OTHER,257,257,0,180,154,0.7003891050583657,0.5992217898832685,0.10116731517509728,0.027140077821011677,0.1867704280155642,0.05,400,82,105,28,75,49,124,0.48249027237354086
+Textbook outcome,textbook_outcome,HIGH_VOLUME,OTHER,257,257,0,184,159,0.7159533073929961,0.6186770428015564,0.09727626459143969,0.007782101167315175,0.17519455252918278,0.05,400,82,109,23,75,50,125,0.48638132295719844

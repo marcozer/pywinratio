@@ -1,0 +1,9 @@
+include README.md CHANGELOG.md CITATION.cff LICENSE CONTRIBUTING.md CODE_OF_CONDUCT.md RELEASING.md .zenodo.json
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include validation *.py *.R *.json *.csv *.md
+recursive-include docs *.md *.py *.rst
+prune docs/_build
+prune docs/api/generated
+prune docs/jupyter_execute
+global-exclude __pycache__ *.py[cod] .DS_Store

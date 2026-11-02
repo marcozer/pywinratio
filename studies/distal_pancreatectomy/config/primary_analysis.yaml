@@ -1,0 +1,115 @@
+study_name: Distal pancreatectomy case study (synthetic registry)
+analysis_version: "1.0"
+
+volume_definition:
+  source: registry-provided, previously published study-period mean annual volume
+  numerator: all minimally invasive pancreatic resections
+  denominator: source study-period denominator
+  reconstruction_policy: never substitute MIDP-only counts; center-year reconstruction is a provenance audit only
+  higher_volume: mean annual volume >10
+  lower_volume: mean annual volume <=10
+
+primary:
+  analysis_key: graded_los_margin_1d
+  label: Main exploratory graded hierarchy; LOS differences of 0 or 1 day tie
+  plot_label: "Main: minimum 2-day LOS difference"
+  group_col: treatment_group
+  arm_a: HIGH_VOLUME
+  arm_b: OTHER
+  pair_strategy: all_pairs
+  outcomes:
+    - name: Mortality within 90 days
+      column: mort90
+      kind: binary
+      direction: lower
+      terminal: true
+      terminal_value: 1
+      missing_is: tie
+    - name: Clavien-Dindo severity (none, III, IV)
+      column: clavien_grade
+      kind: ordinal
+      direction: lower
+      missing_is: tie
+    - name: Pancreatic fistula severity (none, B, C)
+      column: popf_grade
+      kind: ordinal
+      direction: lower
+      missing_is: tie
+    - name: Readmission
+      column: readmission
+      kind: binary
+      direction: lower
+      missing_is: tie
+    - name: Length of stay (differences of 0 or 1 day tie)
+      column: los_days
+      kind: continuous
+      direction: lower
+      tie_tol: 1
+      missing_is: tie
+
+sensitivities:
+  exact_day_los:
+    label: Graded severity; exact-day LOS
+    plot_label: Exact-day LOS
+    outcome_name: Length of stay (exact completed days)
+    los_margin: 0
+  los_margin_2_days:
+    label: Graded severity; minimum 3-day LOS difference
+    plot_label: Minimum 3-day LOS difference
+    outcome_name: Length of stay (differences of 0, 1, or 2 days tie)
+    los_margin: 2
+  categorical_los:
+    label: Graded severity; LOS categorized as <=7, 8-13, or >13 days
+    plot_label: "LOS categories: <=7 / 8-13 / >13 d"
+    los_cutpoints: [7, 13]
+  no_los:
+    label: Graded severity; four-tier hierarchy without LOS
+    plot_label: LOS omitted
+    omit_los: true
+  popf_before_clavien:
+    label: CR-POPF severity before Clavien-Dindo severity
+    plot_label: POPF before Clavien-Dindo
+    outcome_order: [0, 2, 1, 3, 4]
+  readmission_before_popf:
+    label: Readmission before CR-POPF severity
+    plot_label: Readmission before POPF
+    outcome_order: [0, 1, 3, 2, 4]
+
+binary_benchmarks:
+  outcomes:
+    - name: Ideal outcome
+      column: ideal_outcome
+      kind: binary
+      direction: higher
+    - name: Textbook outcome
+      column: textbook_outcome
+      kind: binary
+      direction: higher
+
+matching:
+  covariates:
+    - age_years
+    - sex
+    - bmi
+    - asa_ge3
+    - cci
+    - malignant_case
+    - pathology_group
+    - tumor_size_mm
+    - functional_impairment
+    - prior_abdominal_surgery
+    - chronic_pancreatitis
+    - kidney_disease
+    - cardiac_history
+  exact_cols:
+    - year_band
+    - hospital_type
+    - neoadjuvant
+  method: optimal
+  trim_common_support: true
+  missing: drop
+
+weighting:
+  estimand: overlap
+  missing: drop
+  trim_common_support: true
