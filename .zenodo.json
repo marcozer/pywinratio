@@ -2,7 +2,7 @@
   "upload_type": "software",
   "title": "pywinratio: win ratio, net benefit and win odds for hierarchical composite outcomes in Python",
   "version": "0.3.0",
-  "publication_date": "2026-11-02",
+  "publication_date": "2026-11-08",
   "description": "<p>pywinratio computes the win ratio, the net benefit and the win odds for hierarchical composite outcomes in Python. Patients are compared pair by pair on outcomes ranked by importance (for example death, then hospitalization, then quality of life), and the wins, losses and ties give the three statistics.</p><p>Outcomes can be binary, ordinal, continuous or censored times to an event. The comparison can use every pair of patients, pairs within strata, matched pairs or propensity-score weighted pairs, and patients can be clustered in hospitals. Confidence intervals come from U-statistic theory, the bootstrap or permutation tests. The package also does propensity-score matching and weighting with balance diagnostics, sensitivity analyses, sample-size calculations and the usual tables and figures.</p><p>The results agree with the R packages BuyseTest (3.3.9) and WINS (1.5.1); the comparison scripts and the R reference values are included, together with the documentation and worked examples.</p>",
   "creators": [
     {
