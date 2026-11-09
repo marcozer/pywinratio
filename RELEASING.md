@@ -20,19 +20,18 @@
 
 ## Zenodo
 
-The simplest route is the GitHub integration. Log in to zenodo.org with GitHub,
-go to Account > GitHub and switch the repository on. Then push the tag and
-publish a GitHub release from it. Zenodo archives the release, reads the metadata
-from `.zenodo.json`, and gives two DOIs: one for this version and a "concept" DOI
-that always points to the latest version.
+The repository is connected to Zenodo through the GitHub integration. Push the
+tag and publish a GitHub release from it: Zenodo archives the release within a
+minute or two and reads the metadata from `.zenodo.json`.
 
-Without the integration, run `make zenodo`. It puts a source zip, the wheel and
-the sdist in `dist/`. Upload them at zenodo.org/uploads/new and copy the metadata
-from `.zenodo.json`. You can reserve the DOI before publishing if you want to add
-it to the files first.
+Each release gets its own DOI. The concept DOI, 10.5281/zenodo.24075609, covers
+all versions and does not change, so the README badge and the citation text stay
+as they are. After a release, add the new version DOI to `identifiers` in
+`CITATION.cff` and to the example in `docs/citing.md`.
 
-Once the DOI exists, replace `XXXXXXX` in `README.md`, `docs/citing.md` and
-`CITATION.cff` with the concept DOI.
+If the integration ever stops working, run `make zenodo` and upload the files
+from `dist/` with "New version" on the existing Zenodo record, so the concept DOI
+stays the same.
 
 ## PyPI (optional)
 

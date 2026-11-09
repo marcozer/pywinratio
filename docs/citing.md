@@ -1,12 +1,13 @@
 # Citing pywinratio
 
-If pywinratio contributes to a publication, please cite the software release you
-used. Its DOI is minted by Zenodo for every version; the *concept DOI* always
-resolves to the latest version.
+If pywinratio contributes to a publication, please cite it. Zenodo gives each
+release its own DOI. The DOI below (10.5281/zenodo.24075609) covers all versions
+and always resolves to the latest one; to cite a specific version, use its DOI
+from the Zenodo record, for example 10.5281/zenodo.24075610 for 0.3.0.
 
 > Chouillard M-A, Husson T. *pywinratio: win ratio, net benefit and win odds for
 > hierarchical composite outcomes in Python* (version 0.3.0) [Computer software].
-> Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Zenodo. https://doi.org/10.5281/zenodo.24075609
 
 ```bibtex
 @software{chouillard_pywinratio,
@@ -16,7 +17,7 @@ resolves to the latest version.
   version   = {0.3.0},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.24075609},
   url       = {https://github.com/marcozer/pywinratio}
 }
 ```

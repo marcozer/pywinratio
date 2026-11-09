@@ -1,6 +1,6 @@
 # pywinratio
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24075609.svg)](https://doi.org/10.5281/zenodo.24075609)
 [![CI](https://github.com/marcozer/pywinratio/actions/workflows/ci.yml/badge.svg)](https://github.com/marcozer/pywinratio/actions/workflows/ci.yml)
 [![Documentation](https://readthedocs.org/projects/pywinratio/badge/?version=latest)](https://pywinratio.readthedocs.io)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/marcozer/pywinratio/blob/main/LICENSE)
@@ -115,7 +115,7 @@ them on every change.
 
 If you use pywinratio, please cite it (see [`CITATION.cff`](CITATION.cff)):
 
-> Chouillard M-A, Husson T. pywinratio: win ratio, net benefit and win odds for hierarchical composite outcomes in Python (version 0.3.0). Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Chouillard M-A, Husson T. pywinratio: win ratio, net benefit and win odds for hierarchical composite outcomes in Python (version 0.3.0). Zenodo. https://doi.org/10.5281/zenodo.24075609
 
 Please cite the methods as well, for example Pocock et al. (2012) for the win
 ratio and Buyse (2010) for generalized pairwise comparisons

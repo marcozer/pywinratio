@@ -5,7 +5,8 @@ pywinratio supports Python 3.10 and later on Linux, macOS and Windows.
 ## From the Zenodo or GitHub release
 
 Download the wheel (`pywinratio-<version>-py3-none-any.whl`) from the
-[Zenodo record](citing.md) or the GitHub release and install it:
+[GitHub release](https://github.com/marcozer/pywinratio/releases) and install it
+(every release is also archived on [Zenodo](https://doi.org/10.5281/zenodo.24075609)):
 
 ```bash
 python -m pip install pywinratio-0.3.0-py3-none-any.whl

@@ -21,6 +21,14 @@ authors:
     affiliation: "Department of HPB Surgery and Liver Transplantation, Beaujon Hospital, AP-HP, Université Paris Cité, Clichy, France"
 version: 0.3.0
 date-released: "2026-11-09"
+doi: 10.5281/zenodo.24075609
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24075609
+    description: All versions (concept DOI)
+  - type: doi
+    value: 10.5281/zenodo.24075610
+    description: Version 0.3.0
 license: MIT
 repository-code: "https://github.com/marcozer/pywinratio"
 url: "https://pywinratio.readthedocs.io"
