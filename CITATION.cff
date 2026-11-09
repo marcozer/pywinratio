@@ -20,7 +20,7 @@ authors:
     given-names: Thomas
     affiliation: "Department of HPB Surgery and Liver Transplantation, Beaujon Hospital, AP-HP, Université Paris Cité, Clichy, France"
 version: 0.3.0
-date-released: "2026-11-08"
+date-released: "2026-11-09"
 license: MIT
 repository-code: "https://github.com/marcozer/pywinratio"
 url: "https://pywinratio.readthedocs.io"

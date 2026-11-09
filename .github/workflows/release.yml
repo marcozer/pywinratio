@@ -25,6 +25,9 @@ jobs:
           path: dist/
 
   publish-pypi:
+    # runs only once PyPI trusted publishing is set up and the repository
+    # variable PUBLISH_TO_PYPI is set to "true"
+    if: vars.PUBLISH_TO_PYPI == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment: pypi

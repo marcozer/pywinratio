@@ -37,8 +37,10 @@ Once the DOI exists, replace `XXXXXXX` in `README.md`, `docs/citing.md` and
 ## PyPI (optional)
 
 Create the project on pypi.org with a trusted publisher pointing to this
-repository and the `release.yml` workflow (environment `pypi`). Publishing a
-GitHub release then uploads the packages.
+repository and the `release.yml` workflow (environment `pypi`). Then add the
+repository variable `PUBLISH_TO_PYPI` with the value `true`, under Settings,
+Secrets and variables, Actions, Variables. From then on, publishing a GitHub
+release also uploads the packages to PyPI.
 
 ## Documentation
 

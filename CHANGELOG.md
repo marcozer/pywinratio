@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0 (2026-11-08)
+## 0.3.0 (2026-11-09)
 
 The package is now called pywinratio. It was previously distributed as
 WinRatioPy. `import winratio` and `import winratiopy` still work but raise a
